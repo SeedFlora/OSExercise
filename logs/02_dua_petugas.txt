@@ -1,0 +1,12 @@
+$ gcc -std=c11 -Wall -Wextra -Werror -pedantic \
+  src/02_dua_petugas.c -o bin/02_dua_petugas
+Kompilasi: OK (tanpa warning)
+$ ./bin/02_dua_petugas
+Pengawas: PID label = 40
+Petugas label: paket K-31 siap.
+Pengawas: PID arsip = 41
+Diambil ke-1: PID 40
+Petugas arsip: dokumen R-18 siap.
+Diambil ke-2: PID 41
+Pengawas: kedua petugas telah berakhir.
+Status keluar program: 0

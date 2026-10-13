@@ -1,0 +1,7 @@
+$ gcc -std=c11 -Wall -Wextra -Werror -pedantic \
+  src/03_ganti_program.c -o bin/03_ganti_program
+Kompilasi: OK (tanpa warning)
+$ ./bin/03_ganti_program
+Penulis laporan: menyerahkan kendali.
+Kode pekerjaan: L-42
+Status keluar program: 0

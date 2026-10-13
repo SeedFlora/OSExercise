@@ -1,0 +1,75 @@
+=== 01_loket_label / run 1 ===
+Loket label dibuka.
+Petugas: label paket K-31 siap.
+Pengawas: PID petugas = 69
+Pengawas: petugas telah berakhir.
+Status keluar program: 0
+=== 01_loket_label / run 2 ===
+Loket label dibuka.
+Pengawas: PID petugas = 71
+Petugas: label paket K-31 siap.
+Pengawas: petugas telah berakhir.
+Status keluar program: 0
+=== 01_loket_label / run 3 ===
+Loket label dibuka.
+Petugas: label paket K-31 siap.
+Pengawas: PID petugas = 73
+Pengawas: petugas telah berakhir.
+Status keluar program: 0
+=== 01_loket_label / run 4 ===
+Loket label dibuka.
+Pengawas: PID petugas = 75
+Petugas: label paket K-31 siap.
+Pengawas: petugas telah berakhir.
+Status keluar program: 0
+=== 01_loket_label / run 5 ===
+Loket label dibuka.
+Pengawas: PID petugas = 77
+Petugas: label paket K-31 siap.
+Pengawas: petugas telah berakhir.
+Status keluar program: 0
+=== 02_dua_petugas / run 1 ===
+Pengawas: PID label = 79
+Petugas label: paket K-31 siap.
+Pengawas: PID arsip = 80
+Petugas arsip: dokumen R-18 siap.
+Diambil ke-1: PID 79
+Diambil ke-2: PID 80
+Pengawas: kedua petugas telah berakhir.
+Status keluar program: 0
+=== 02_dua_petugas / run 2 ===
+Pengawas: PID label = 82
+Petugas label: paket K-31 siap.
+Pengawas: PID arsip = 83
+Diambil ke-1: PID 82
+Petugas arsip: dokumen R-18 siap.
+Diambil ke-2: PID 83
+Pengawas: kedua petugas telah berakhir.
+Status keluar program: 0
+=== 02_dua_petugas / run 3 ===
+Pengawas: PID label = 85
+Petugas label: paket K-31 siap.
+Pengawas: PID arsip = 86
+Diambil ke-1: PID 85
+Petugas arsip: dokumen R-18 siap.
+Diambil ke-2: PID 86
+Pengawas: kedua petugas telah berakhir.
+Status keluar program: 0
+=== 02_dua_petugas / run 4 ===
+Pengawas: PID label = 88
+Petugas label: paket K-31 siap.
+Pengawas: PID arsip = 89
+Petugas arsip: dokumen R-18 siap.
+Diambil ke-1: PID 88
+Diambil ke-2: PID 89
+Pengawas: kedua petugas telah berakhir.
+Status keluar program: 0
+=== 02_dua_petugas / run 5 ===
+Pengawas: PID label = 91
+Petugas label: paket K-31 siap.
+Pengawas: PID arsip = 92
+Diambil ke-1: PID 91
+Petugas arsip: dokumen R-18 siap.
+Diambil ke-2: PID 92
+Pengawas: kedua petugas telah berakhir.
+Status keluar program: 0

@@ -1,0 +1,9 @@
+$ gcc -std=c11 -Wall -Wextra -Werror -pedantic \
+  src/04_gagal_ganti.c -o bin/04_gagal_ganti
+Kompilasi: OK (tanpa warning)
+$ test ! -e ./alat_laporan_tidak_tersedia
+Pemeriksaan: alat lokal memang tidak tersedia
+$ ./bin/04_gagal_ganti
+Penulis laporan: mencoba alat lokal.
+Penulis laporan: kembali karena exec gagal.
+Status keluar program: 2

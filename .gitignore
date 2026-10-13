@@ -1,0 +1,15 @@
+# Local compilation and document-render caches
+/bin/
+/tmp/
+__pycache__/
+*.pyc
+
+# Derived HTML and empty diagnostic logs
+/logs/tampilan_hasil.html
+/logs/*.stderr.txt
+
+# Package managers and local configuration
+node_modules/
+.venv/
+.env
+.env.*

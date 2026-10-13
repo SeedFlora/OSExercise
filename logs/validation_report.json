@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Bangkok",
+  "execution": "actual Linux WSL2 PTY, isolated Alpine chroot",
+  "compiler": "GCC 15.2.0",
+  "compiler_flags": ["-std=c11", "-Wall", "-Wextra", "-Werror", "-pedantic"],
+  "compilation": "all 4 sources passed without warnings",
+  "program_status": {"01_loket_label": 0, "02_dua_petugas": 0, "03_ganti_program": 0, "04_gagal_ganti": 2},
+  "failure_demo_status_expected": true,
+  "additional_runs": {"01_loket_label": 5, "02_dua_petugas": 5},
+  "additional_run_checks": "all status 0; child before parent closing message; two returned wait PIDs match created children",
+  "pdf_pages": 9,
+  "pdf_images": 5,
+  "pdf_reference_links": 4,
+  "pdf_repository_links": 2,
+  "screenshot_type": "actual browser screenshots of retained normalized Linux PTY transcripts",
+  "visual_qa": "all pages inspected; adjusted diagrams to remove text overlap; changed pages re-rendered and inspected",
+  "concept_audit": "independent agent review passed; no exam source copied into teaching package",
+  "limits": ["fork failure not forced", "PID identity across exec explained from API documentation, not measured", "one observed schedule does not establish all possible schedules"]
+}

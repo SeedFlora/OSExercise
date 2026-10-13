@@ -1,0 +1,12 @@
+$ uname -srm
+Linux 6.6.87.2-microsoft-standard-WSL2 x86_64
+$ cat /etc/alpine-release
+3.23.6
+$ gcc --version | head -1
+gcc (Alpine 15.2.0) 15.2.0
+$ test -t 1 && echo stdout=terminal-PTY
+stdout=terminal-PTY
+$ command -v printf
+printf
+$ /usr/bin/printf "%s\n" executable-tersedia
+executable-tersedia

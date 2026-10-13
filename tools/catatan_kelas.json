@@ -1,0 +1,57 @@
+{
+  "diskusi": [
+    {
+      "id": "D1",
+      "pertanyaan": "Pada eksperimen petugas label, buat gambar alur dan tandai titik masuk cabang serta titik return. Bagaimana penandaan itu membantu menjelaskan bagian mana yang masih dapat dijalankan oleh setiap proses?",
+      "tujuan": "Menelusuri alur parent dan child serta batas eksekusi setelah return."
+    },
+    {
+      "id": "D2",
+      "pertanyaan": "Untuk eksperimen dua petugas, rancang tabel pengamatan yang mencatat PID dari setiap fork pada parent dan PID dari setiap wait. Data apa yang perlu dibandingkan ketika eksperimen diulang?",
+      "tujuan": "Menghubungkan pembentukan child dengan penantian terhadap child yang telah berakhir."
+    },
+    {
+      "id": "D3",
+      "pertanyaan": "Pada eksperimen pergantian program langsung, tentukan bukti dari kode yang akan kamu gunakan untuk menjelaskan hubungan antara program semula dan program pengganti. Bedakan bukti itu dari hal yang hanya terlihat pada tampilan terminal.",
+      "tujuan": "Membedakan identitas proses, program yang dijalankan, dan bukti pengamatan."
+    },
+    {
+      "id": "D4",
+      "pertanyaan": "Jika jalur executable lokal sengaja menunjuk ke berkas yang tidak tersedia, susun langkah pemeriksaan untuk menentukan apakah pesan terminal berasal dari program pengganti atau dari jalur penanganan kegagalan di program semula.",
+      "tujuan": "Mengenali jalur kegagalan execlp dan alasan kode sesudah pemanggilan dapat dijalankan."
+    },
+    {
+      "id": "D5",
+      "pertanyaan": "Dua rekaman eksperimen petugas menunjukkan urutan pesan yang berbeda. Bagaimana kamu menentukan hubungan urutan yang diwajibkan oleh kode, dan pengamatan tambahan apa yang berguna sebelum membuat kesimpulan?",
+      "tujuan": "Membedakan jadwal yang diamati dari jaminan urutan serta mempertimbangkan cara keluaran ditangkap."
+    }
+  ],
+  "miskonsepsi": [
+    {
+      "anggapan": "Child mengulang program dari baris pertama setelah fork.",
+      "koreksi": "Child melanjutkan dari titik setelah fork. Nilai kembali fork pada child adalah penanda nol; angka itu bukan PID asli child."
+    },
+    {
+      "anggapan": "Return pada child juga mengakhiri parent.",
+      "koreksi": "Return dari main mengakhiri proses yang menjalankannya. Parent tetap mengikuti alurnya sendiri."
+    },
+    {
+      "anggapan": "Satu wait menyelesaikan penantian terhadap semua child dan menentukan seluruh urutan pesan.",
+      "koreksi": "Satu wait yang berhasil mengambil satu child. Pesan sebelum penantian tetap dapat dijadwalkan berbeda."
+    },
+    {
+      "anggapan": "Execlp membuat proses tambahan dan kembali setelah program pengganti selesai.",
+      "koreksi": "Execlp yang berhasil mengganti program pada proses yang memanggilnya dan tidak kembali ke kode lama. Fungsi itu kembali hanya jika terjadi kegagalan."
+    },
+    {
+      "anggapan": "Wait yang berhasil membuktikan program pengganti berhasil menjalankan tugasnya.",
+      "koreksi": "Wait yang berhasil menunjukkan child telah berakhir. Wait(NULL) tidak menyimpan status akhir child, sehingga keberhasilan tugas tidak dapat disimpulkan dari penantian saja."
+    }
+  ],
+  "catatan_pelaksanaan": [
+    "Screenshot menampilkan satu hasil eksekusi yang benar-benar diamati; urutan pada gambar bukan jadwal yang dijamin untuk setiap pengulangan.",
+    "Eksperimen tidak memaksa kegagalan fork. Cabang kegagalan tetap disediakan dalam kode dan dibahas sebagai kemungkinan.",
+    "Program dijalankan langsung ke terminal. Pesan printf diakhiri newline. Pengalihan stdout dapat mengubah penyanggaan: isi buffer sebelum fork dapat ikut tersalin, dan isi buffer lama yang belum dikeluarkan sebelum execlp berhasil dapat hilang.",
+    "Pada eksperimen penantian, nilai kembali wait diperiksa sebelum menyatakan child telah berakhir."
+  ]
+}

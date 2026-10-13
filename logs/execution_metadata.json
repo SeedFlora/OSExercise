@@ -1,0 +1,116 @@
+{
+  "time": "2026-10-13T10:17:38.417926+07:00",
+  "environment": "WSL2 Linux; isolated Alpine chroot; Linux script PTY",
+  "toolchain_windows": "D:\\tmp\\konsep-proses-toolchain-20261013",
+  "toolchain_linux": "/mnt/host/d/tmp/konsep-proses-toolchain-20261013",
+  "source_sha256": {
+    "01_loket_label.c": "7d414a82e2117ae2b9b5a8ff7509615c0da82e012b7b01430315740f3779a87a",
+    "02_dua_petugas.c": "0b8e56102fc564d10f0fbb3bb0784c5ed1ec6406406d81a623b48e8f7a33f0b0",
+    "03_ganti_program.c": "5dd02822fb97e4db6320054b26d1a09be47ad4dad0a9fa89e271cca65e341065",
+    "04_gagal_ganti.c": "c8ffdfaa687426bff94b42ff8f9089370369efccf42fb7e9a55085c3db4a0660"
+  },
+  "records": [
+    {
+      "name": "00_lingkungan",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "docker-desktop",
+        "--",
+        "script",
+        "-q",
+        "-e",
+        "-c",
+        "chroot /mnt/host/d/tmp/konsep-proses-toolchain-20261013 /bin/sh /lab/tools/session_linux.sh setup",
+        "/dev/null"
+      ],
+      "pty_wrapper_exit": 0,
+      "sha256_raw": "e6bda1320958aa4ab0a9f12db0e049fe5237e27840da0d1dc6b42793c3da7be6"
+    },
+    {
+      "name": "01_loket_label",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "docker-desktop",
+        "--",
+        "script",
+        "-q",
+        "-e",
+        "-c",
+        "chroot /mnt/host/d/tmp/konsep-proses-toolchain-20261013 /bin/sh /lab/tools/session_linux.sh demo 01_loket_label",
+        "/dev/null"
+      ],
+      "pty_wrapper_exit": 0,
+      "sha256_raw": "7725d827ab82070471db18dff4969d86d9e6226b1e92ebe152e0637a1b4319b8"
+    },
+    {
+      "name": "02_dua_petugas",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "docker-desktop",
+        "--",
+        "script",
+        "-q",
+        "-e",
+        "-c",
+        "chroot /mnt/host/d/tmp/konsep-proses-toolchain-20261013 /bin/sh /lab/tools/session_linux.sh demo 02_dua_petugas",
+        "/dev/null"
+      ],
+      "pty_wrapper_exit": 0,
+      "sha256_raw": "ec94624b55ab9cbdd5513ad5ed56afb8eb0f90e01d26551497498573ab34dc3f"
+    },
+    {
+      "name": "03_ganti_program",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "docker-desktop",
+        "--",
+        "script",
+        "-q",
+        "-e",
+        "-c",
+        "chroot /mnt/host/d/tmp/konsep-proses-toolchain-20261013 /bin/sh /lab/tools/session_linux.sh demo 03_ganti_program",
+        "/dev/null"
+      ],
+      "pty_wrapper_exit": 0,
+      "sha256_raw": "8002e1e0a1aa8fbf8891ebd889c51aa843092a50a78169ac0acfa94c6b45a008"
+    },
+    {
+      "name": "04_gagal_ganti",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "docker-desktop",
+        "--",
+        "script",
+        "-q",
+        "-e",
+        "-c",
+        "chroot /mnt/host/d/tmp/konsep-proses-toolchain-20261013 /bin/sh /lab/tools/session_linux.sh demo 04_gagal_ganti",
+        "/dev/null"
+      ],
+      "pty_wrapper_exit": 0,
+      "sha256_raw": "ccaad09bbc0fc1d2d09aaecee039c0fd109f0410216406318d9a4ed49edb1775"
+    },
+    {
+      "name": "05_pengulangan",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "docker-desktop",
+        "--",
+        "script",
+        "-q",
+        "-e",
+        "-c",
+        "chroot /mnt/host/d/tmp/konsep-proses-toolchain-20261013 /bin/sh /lab/tools/session_linux.sh repeats",
+        "/dev/null"
+      ],
+      "pty_wrapper_exit": 0,
+      "sha256_raw": "06fa654059dfaf720a3009738dbe6af01ee96649f58701c221ba4008971d9ab7"
+    }
+  ]
+}
